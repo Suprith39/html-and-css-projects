@@ -9,6 +9,12 @@
 </head>
 
 <body>
+
+
+    <div class="nav" id="nav">
+        <img src="netflix-logo.png" alt=""class="nav__logo">
+        <img src="netflix-avatar.png" alt=""class= "nav__avatar">
+    </div>
     <div class="banner">
         <div class="banner__contents">
             <h1 class="banner__title">MONEY HIEST</h1>
@@ -18,6 +24,7 @@
             </div>
             <div class="banner__description">A criminal mastermind who goes by "The Professor" has a plan to pull off
                 the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain.</div>
+                <div class="fadebottom"></div>
         </div>
     </div>
     <!-- netflix originals -->
@@ -78,6 +85,14 @@
             <img src="small-movie8.jpg" alt="" class="row__poster" />
         </div>
     </div>
+    <script>
+        const nav =document.getElementById('nav');
+        window.addEventListener('scroll',()=>{
+            if(window.scrollY>=100){
+                nav.classList.remove('nav__black');
+            }
+        });
+    </script>
 </body>
 
 </html>
